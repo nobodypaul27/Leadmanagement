@@ -1,0 +1,18 @@
+{% extends 'lead/base.html' %}
+ {% load static %}
+
+{% block content %}
+
+<div class="col-sm-10">
+<h3 class="text-red">Add lead</h3>
+
+<form action="" method="POST">
+{% csrf_token %}
+
+{{form.as_p}}
+
+<input type="submit" class="btn btn-success" value = "Add">
+</form>
+</div>
+
+{% endblock content %}
